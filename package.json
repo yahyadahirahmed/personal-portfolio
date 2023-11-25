@@ -1,0 +1,85 @@
+{
+  "name": "ts-next-tailwind-template",
+  "version": "0.5.0",
+  "private": "true",
+  "description": "Customizable Front-End Template",
+  "packageManager": "pnpm@8.6.12",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ext=jsx,ts,tsx .",
+    "lint:fix": "eslint --ext=jsx,ts,tsx . --fix",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.4",
+    "next": "^14.0.1",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use": "^17.4.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.1",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.34",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "14.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.1.0",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "*.tsx,*.ts,*.mdx": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "author": {
+    "email": "crisemcr@gmail.com",
+    "name": "Cristian Crețu",
+    "url": "https://cretu.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristicretu/ts-next-tailwind-template/issues"
+  },
+  "homepage": "https://template.cretu.dev",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "tailwindcss",
+    "template",
+    "radix",
+    "react",
+    "nextjs"
+  ]
+}
